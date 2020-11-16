@@ -40,14 +40,13 @@ body {
 }
 
 .logo-box {
-  height: 64px;
   position: absolute;
-  left: 30px;
-  top: 30px;
+  left: 40px;
+  top: 40px;
 }
 
 .logo {
-  height: 64px;
+  height: 35px;
 }
 
 .heading-box {
@@ -56,7 +55,7 @@ body {
 .heading-primary {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 40%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
