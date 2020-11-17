@@ -9,3 +9,5 @@ out
 gen
 /node_modules
 sass/.sass-cache/*
+scss/.sass-cache/
+.DS_Store
