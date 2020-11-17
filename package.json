@@ -1,0 +1,23 @@
+{
+  "name": "kazbegi",
+  "version": "1.0.0",
+  "description": "Pure Html, Saas Project.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koexygen/kazbegi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koexygen/kazbegi/issues"
+  },
+  "homepage": "https://github.com/koexygen/kazbegi#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
