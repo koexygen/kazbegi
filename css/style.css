@@ -159,7 +159,7 @@ body {
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2 );
+    width: calc((100% - 6rem) / 2);
     float: left; }
     .row .col-1-of-2:after {
       content: '';
