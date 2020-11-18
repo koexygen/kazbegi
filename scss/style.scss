@@ -1,6 +1,6 @@
+@import "abstracts/variables";
 @import "abstracts/functions";
 @import "abstracts/mixins";
-@import "abstracts/variables";
 
 @import "base/base";
 @import "base/animations";
@@ -8,6 +8,7 @@
 @import "base/typograph";
 
 @import "layout/header";
+@import "layout/grid";
 
 @import "components/buttons";
 

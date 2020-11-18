@@ -3,7 +3,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.7;
-  color: $color-gray-dark;
+  color: $color-grey-dark;
   padding: 3rem;
 }
 
@@ -28,5 +28,29 @@ body {
     -webkit-animation: moveInRight 1s ease-in-out;
     -o-animation: moveInRight 1s ease-in-out;
     animation: moveInRight 1s ease-in-out;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, $color-primary-lighten, $color-primary-darken);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+
+  &:hover {
+    -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+    -moz-transform: skewY(2deg) skewX(15deg) scale(1.1);
+    -ms-transform: skewY(2deg) skewX(15deg) scale(1.1);
+    -o-transform: skewY(2deg) skewX(15deg) scale(1.1);
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
   }
 }
