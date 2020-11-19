@@ -10,10 +10,11 @@
     width: calc((100% - #{$gutter-horizontal}) / 2);
     float: left;
 
-    @include clearfix;
-
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
     }
   }
+
+  @include clearfix;
+
 }

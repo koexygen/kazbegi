@@ -1,0 +1,50 @@
+.composition {
+  position: relative;
+
+  &__photo {
+    width: 55%;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    -moz-box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    border-radius: 2px;
+    position: absolute;
+    transition: all .4s;
+    outline-offset: 1.5rem;
+
+    &--1 {
+      left: 0;
+      top: -2rem;
+    }
+
+    &--2 {
+      right: 0;
+      top: 2rem;
+    }
+
+    &--3 {
+      left: 20%;
+      top: 10rem;
+    }
+
+    &:hover {
+      outline: 1.5rem solid $color-primary;
+      -webkit-transform: scale(1.05) translateY(-1rem);
+      -moz-transform: scale(1.05) translateY(-1rem);
+      -ms-transform: scale(1.05) translateY(-1rem);
+      -o-transform: scale(1.05) translateY(-1rem);
+      transform: scale(1.05) translateY(-1rem);
+      -webkit-box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+      -moz-box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+      z-index: 1;
+    }
+  }
+
+  &:hover &__photo:not(:hover) {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
