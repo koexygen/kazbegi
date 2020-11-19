@@ -9,11 +9,25 @@
   -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
   -moz-box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+  transition: all .4s;
+
+  &:hover {
+    -webkit-transform: translateY(-1.5rem) scale(1.03);
+    -moz-transform: translateY(-1.5rem) scale(1.03);
+    -ms-transform: translateY(-1.5rem) scale(1.03);
+    -o-transform: translateY(-1.5rem) scale(1.03);
+    transform: translateY(-1.5rem) scale(1.03);
+  }
 
   &__icon {
-  font-size: 6rem;
+    font-size: 6rem;
     margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-lighten, $color-primary-darken);
+    -webkit-background-clip: text;
+    color: transparent;
   }
+
 
   &__text {
 
