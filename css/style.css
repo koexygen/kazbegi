@@ -146,6 +146,7 @@ body {
   background-position: top;
   -webkit-background-size: cover;
   background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
   .header__logo-box {
@@ -340,7 +341,7 @@ body {
     color: transparent; }
 
 .card {
-  height: 50rem;
+  height: 52rem;
   perspective: 150rem;
   position: relative; }
   .card__side {
@@ -349,15 +350,19 @@ body {
     -ms-transition: all .8s ease;
     -o-transition: all .8s ease;
     transition: all .8s ease;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
     backface-visibility: hidden;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    height: 50rem;
+    height: 52rem;
     -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    overflow: hidden; }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
@@ -368,9 +373,46 @@ body {
       transform: rotateY(180deg);
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
   .card:hover .card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
+  .card__picture {
+    height: 23rem;
+    background-size: cover;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg"); }
+  .card__heading {
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
 
 .section-about {
   background-color: #f7f7f7;
