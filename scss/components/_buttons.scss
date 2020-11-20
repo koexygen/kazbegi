@@ -50,6 +50,15 @@
     }
   }
 
+  &--green {
+    color: $color-white;
+    background-color: $color-primary;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   &::after {
     content: "";
     -webkit-border-radius: 5rem;
