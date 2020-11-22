@@ -15,12 +15,41 @@
   &__list {
     position: absolute;
     @include center-hor-ver;
+    list-style: none;
+    text-align: center;
   }
 
   &__item {
+    margin: 1rem;
   }
 
   &__link {
+    &:link, &:visited {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 300;
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 1rem 2rem;
+      background-size: 235%;
+      -webkit-transition: all .4s;
+      -moz-transition: all .4s;
+      -ms-transition: all .4s;
+      -o-transition: all .4s;
+      transition: all .4s;
+      background-image: linear-gradient(120deg, transparent 50%, $color-white 50%);
+    }
+
+    &:hover, &:active {
+    background-position: 100%;
+      color: $color-primary;
+      -webkit-transform: translateX(1rem);
+      -moz-transform: translateX(1rem);
+      -ms-transform: translateX(1rem);
+      -o-transform: translateX(1rem);
+      transform: translateX(1rem);
+    }
   }
 
   &__button {
@@ -46,5 +75,10 @@
       $color-primary-darken
     );
     z-index: 10;
+    -webkit-transform: scale(80);
+    -moz-transform: scale(80);
+    -ms-transform: scale(80);
+    -o-transform: scale(80);
+    transform: scale(80);
   }
 }
