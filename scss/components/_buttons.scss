@@ -1,6 +1,7 @@
 @import "../abstracts/variables";
 
 .btn {
+  &,
   &:link,
   &:visited {
     text-decoration: none;
@@ -16,9 +17,11 @@
     position: relative;
     animation: moveInBottom 1s ease-out 0.75s;
     animation-fill-mode: backwards;
+    border: none;
   }
 
   &:hover {
+
     -webkit-transform: translateY(-0.3rem);
     -moz-transform: translateY(-0.3rem);
     -ms-transform: translateY(-0.3rem);
@@ -32,7 +35,8 @@
     }
   }
 
-  &:active {
+  &:active, &:focus {
+    outline: none;
     -webkit-transform: translateY(-0.1rem);
     -moz-transform: translateY(-0.1rem);
     -ms-transform: translateY(-0.1rem);
