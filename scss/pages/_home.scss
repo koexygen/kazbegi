@@ -8,11 +8,11 @@
   margin-top: -12rem;
   padding: 20rem 0;
   background-image: linear-gradient(
-                  to right bottom,
-                  rgba($color-primary-lighten, 0.8),
-                  rgba($color-primary-darken, 0.8)
-  ),
-  url(../img/nat-4.jpg);
+      to right bottom,
+      rgba($color-primary-lighten, 0.8),
+      rgba($color-primary-darken, 0.8)
+    ),
+    url(../img/nat-4.jpg);
   background-size: cover;
   -webkit-transform: skewY(-7deg);
   -moz-transform: skewY(-7deg);
@@ -42,18 +42,27 @@
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, $color-primary-lighten, $color-primary-darken);
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-lighten,
+    $color-primary-darken
+  );
 }
 
 .book {
-  background-image: linear-gradient(105deg, rgba($color-white, .9) 50%, transparent 50%),url('../img/nat-10.jpg');
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url("../img/nat-10.jpg");
   background-size: cover;
   border-radius: 3px;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
-  -moz-box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
-  box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+  -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+  -moz-box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
   height: 50rem;
-  
+
   &__form {
     width: 50%;
     padding: 6rem;

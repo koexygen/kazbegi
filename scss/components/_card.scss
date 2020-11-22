@@ -4,11 +4,11 @@
   position: relative;
 
   &__side {
-    -webkit-transition: all .8s ease;
-    -moz-transition: all .8s ease;
-    -ms-transition: all .8s ease;
-    -o-transition: all .8s ease;
-    transition: all .8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
@@ -18,9 +18,9 @@
     top: 0;
     left: 0;
     height: 52rem;
-    -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    -moz-box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    -moz-box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
     overflow: hidden;
 
     &--front {
@@ -35,17 +35,27 @@
       transform: rotateY(180deg);
 
       &--1 {
-        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+        background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        );
       }
 
       &--2 {
-        background-image: linear-gradient(to right bottom, $color-primary-lighten, $color-primary-darken);
-
+        background-image: linear-gradient(
+          to right bottom,
+          $color-primary-lighten,
+          $color-primary-darken
+        );
       }
 
       &--3 {
-        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        );
       }
     }
   }
@@ -67,18 +77,32 @@
     border-radius: 3px;
 
     &--1 {
-      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url("../img/nat-5.jpg");
+      background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        ),
+        url("../img/nat-5.jpg");
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, $color-primary-lighten, $color-primary-darken), url("../img/nat-6.jpg");
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-lighten,
+          $color-primary-darken
+        ),
+        url("../img/nat-6.jpg");
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url("../img/nat-7.jpg");
+      background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url("../img/nat-7.jpg");
     }
   }
-
 
   &__heading {
     color: $color-white;
@@ -99,15 +123,27 @@
     box-decoration-break: clone;
 
     &--1 {
-      background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light, 0.85),
+        rgba($color-secondary-dark, 0.85)
+      );
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, rgba($color-primary-lighten, .85), rgba($color-primary-darken, .85));
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-lighten, 0.85),
+        rgba($color-primary-darken, 0.85)
+      );
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, 0.85),
+        rgba($color-tertiary-dark, 0.85)
+      );
     }
   }
 
@@ -135,13 +171,7 @@
 
   &__cta {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    @include center-hor-ver;
     width: 90%;
     text-align: center;
   }
