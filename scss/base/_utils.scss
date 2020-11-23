@@ -6,9 +6,17 @@
 }
 .g-margin-bottom-medium {
   margin-bottom: 4rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 3rem!important;
+  }
 }
 .g-margin-bottom-large {
   margin-bottom: 8rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 5rem!important;
+  }
 }
 .g-margin-top-large {
   margin-top: 10rem !important;

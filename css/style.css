@@ -97,9 +97,15 @@ body {
 
 .g-margin-bottom-medium {
   margin-bottom: 4rem !important; }
+  @media (max-width: 56.25em) {
+    .g-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
 
 .g-margin-bottom-large {
   margin-bottom: 8rem !important; }
+  @media (max-width: 56.25em) {
+    .g-margin-bottom-large {
+      margin-bottom: 5rem !important; } }
 
 .g-margin-top-large {
   margin-top: 10rem !important; }
@@ -253,6 +259,9 @@ body {
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 4rem; } }
   .footer__logo {
     width: 15rem;
     height: auto; }
@@ -384,8 +393,8 @@ body {
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media (max-width: 56.25em) {
     .navigation__background {
-      top: 6rem;
-      right: 6rem; } }
+      top: 6.5rem;
+      right: 6.5rem; } }
 .navigation__checkbox:checked ~ .navigation__background {
   -webkit-transform: scale(100);
   -moz-transform: scale(100);
@@ -536,15 +545,49 @@ body {
     position: absolute;
     transition: all 0.4s;
     outline-offset: 1.5rem; }
+    @media (max-width: 56.25em) {
+      .composition__photo {
+        float: left;
+        position: relative;
+        width: 33.33%;
+        -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
     .composition__photo--1 {
       left: 0;
       top: -2rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--1 {
+          top: 0;
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          -o-transform: scale(1.2);
+          transform: scale(1.2); } }
     .composition__photo--2 {
       right: 0;
-      top: 2rem; }
+      top: -1rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--2 {
+          top: 0;
+          -webkit-transform: scale(1.3);
+          -moz-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+          -o-transform: scale(1.3);
+          transform: scale(1.3);
+          z-index: 3; } }
     .composition__photo--3 {
       left: 20%;
       top: 10rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--3 {
+          top: 1rem;
+          left: 0;
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          transform: scale(1.1); } }
     .composition__photo:hover {
       outline: 1.5rem solid #55c57a;
       -webkit-transform: scale(1.05) translateY(-1rem);
@@ -575,6 +618,9 @@ body {
   -moz-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: all 0.4s; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      padding: 2rem; } }
   .feature-box:hover {
     -webkit-transform: translateY(-1.5rem) scale(1.03);
     -moz-transform: translateY(-1.5rem) scale(1.03);
@@ -588,6 +634,9 @@ body {
     background-image: linear-gradient(to right, #7ed56f, #28b485);
     -webkit-background-clip: text;
     color: transparent; }
+    @media (max-width: 56.25em) {
+      .feature-box__icon {
+        margin-bottom: 0; } }
 
 .card {
   height: 52rem;
@@ -982,6 +1031,9 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 20rem 0; } }
 
 .section-features {
   margin-top: -12rem;
@@ -999,15 +1051,24 @@ body {
     -ms-transform: skewY(7deg);
     -o-transform: skewY(7deg);
     transform: skewY(7deg); }
+  @media (max-width: 56.25em) {
+    .section-features {
+      padding: 10rem 0; } }
 
 .section-tours {
   margin-top: -12rem;
   padding: 25rem 0 15rem 0;
   background-color: #f7f7f7; }
+  @media (max-width: 56.25em) {
+    .section-tours {
+      padding: 20rem 0 10rem 0; } }
 
 .section-stories {
   position: relative;
   padding: 15rem 0; }
+  @media (max-width: 56.25em) {
+    .section-stories {
+      padding: 10rem 0; } }
 
 .section-book {
   padding: 15rem 0;
