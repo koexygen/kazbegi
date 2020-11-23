@@ -15,3 +15,44 @@
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+
+
+//media query manager
+/*
+phone - 600px
+table portrait - 900px
+tablet landscape - 1200px
+big desktop - 1800px +
+*/
+// 1em == 16px
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    //600px
+    @media (max-width: 37.5em) {
+      @content
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    //900px
+    @media (max-width: 56.25em) {
+      @content
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    // 1200px
+    @media (max-width: 75em) {
+      @content
+    }
+  }
+
+  @if $breakpoint == big-desk {
+    //1800px
+    @media (max-width: 112.5em) {
+      @content
+    }
+  }
+}
