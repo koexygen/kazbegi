@@ -357,6 +357,22 @@ body {
   top: -1rem; }
 .navigation__button:hover .navigation__icon:after {
   top: 1rem; }
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+.navigation__checkbox:checked + .navigation__button .navigation__icon:before {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  top: 0; }
+.navigation__checkbox:checked + .navigation__button .navigation__icon:after {
+  top: 0;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg); }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
