@@ -200,6 +200,10 @@
     -moz-box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
+    &__details {
+      padding: 1rem 3rem;
+    }
+
     &__side {
       position: relative;
       height: auto;
@@ -240,7 +244,7 @@
     }
 
     &__price-value {
-      font-size: 6rem;
+      font-size: 4rem;
     }
   }
 }

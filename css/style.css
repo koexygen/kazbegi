@@ -754,6 +754,8 @@ body {
       -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       -moz-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .card__details {
+        padding: 1rem 3rem; }
       .card__side {
         position: relative;
         height: auto;
@@ -783,7 +785,7 @@ body {
       .card__price-box {
         margin-bottom: 3rem; }
       .card__price-value {
-        font-size: 6rem; } }
+        font-size: 4rem; } }
 
 .story {
   width: 75%;
@@ -799,12 +801,30 @@ body {
   -o-transform: skewX(-12deg);
   transform: skewX(-12deg);
   position: relative; }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      padding: 4rem 4rem 4rem 7rem; } }
+  @media (max-width: 37.5em) {
+    .story {
+      -webkit-transform: skewX(0);
+      -moz-transform: skewX(0);
+      -ms-transform: skewX(0);
+      -o-transform: skewX(0);
+      transform: skewX(0); } }
   .story__text {
     -webkit-transform: skewX(12deg);
     -moz-transform: skewX(12deg);
     -ms-transform: skewX(12deg);
     -o-transform: skewX(12deg);
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .story__text {
+        -webkit-transform: skewX(0);
+        -moz-transform: skewX(0);
+        -ms-transform: skewX(0);
+        -o-transform: skewX(0);
+        transform: skewX(0); } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -818,6 +838,13 @@ body {
     -ms-transform: translateX(-3rem) skewX(12deg);
     -o-transform: translateX(-3rem) skewX(12deg);
     transform: translateX(-3rem) skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .story__shape {
+        -webkit-transform: translateX(-3rem) skewX(0);
+        -moz-transform: translateX(-3rem) skewX(0);
+        -ms-transform: translateX(-3rem) skewX(0);
+        -o-transform: translateX(-3rem) skewX(0);
+        transform: translateX(-3rem) skewX(0); } }
   .story__img {
     height: 100%;
     -webkit-transform: translateX(-4rem) scale(1.4);
