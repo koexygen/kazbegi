@@ -58,6 +58,11 @@
     -ms-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
   }
 
   &:target &__content {
@@ -72,6 +77,10 @@
   &__left {
     width: 33.33%;
     display: table-cell;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__right {
@@ -84,6 +93,13 @@
   &__img {
     display: block;
     width: 100%;
+
+    @include respond(tab-land) {
+      height: 20%;
+      object-fit: cover;
+    }
+
+
   }
 
   &__text {
